@@ -1,0 +1,11 @@
+/* Estilos para el selector de partido y la imagen */
+.partido-select {
+  display: flex;
+  align-items: left;
+}
+
+.partido-image {
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Ajusta el tamaño según sea necesario */
+  margin-left: 10px;
+}

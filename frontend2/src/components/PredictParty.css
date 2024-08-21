@@ -1,0 +1,25 @@
+/* Estilos para el selector de partido y la imagen */
+.partido-select {
+  display: flex;
+  align-items: left;
+}
+
+.partido-image {
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Ajusta el tamaño según sea necesario */
+  margin-left: 10px;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.result {
+  animation: fadeIn 0.5s ease-in-out;
+}

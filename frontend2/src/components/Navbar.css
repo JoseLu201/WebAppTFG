@@ -1,0 +1,49 @@
+/* Navbar.css */
+
+/* Estilo general para el Navbar */
+.navbar {
+    background-color: #343a40; /* Color de fondo oscuro */
+    padding: 0.5rem 1rem; /* Espaciado del Navbar */
+  }
+  
+  /* Contenedor del Navbar */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilo para el título del Navbar */
+  .navbar-brand {
+    color: #ffffff; /* Color del texto del título */
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  /* Estilo para los enlaces de navegación */
+  .navbar-nav {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Alinea los elementos en fila */
+    gap: 1rem; /* Espacio entre los elementos de la lista */
+  }
+  
+  /* Estilo para cada elemento de navegación */
+  .nav-item {
+    margin: 0; /* Sin margen adicional */
+  }
+  
+  /* Estilo para los enlaces dentro del Navbar */
+  .nav-link {
+    color: #ffffff; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+    padding: 0.5rem 1rem; /* Espaciado interno del enlace */
+  }
+  
+  /* Estilo para los enlaces cuando están activos */
+  .nav-link.active,
+  .nav-link:hover {
+    background-color: #495057; /* Color de fondo al pasar el cursor o cuando está activo */
+    border-radius: 0.25rem; /* Bordes redondeados */
+  }
+  

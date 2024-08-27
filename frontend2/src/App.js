@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import GenerateText from './components/GenerateText';
 import PredictParty from './components/PredictParty';
+import './App.css';  // Importamos el archivo de CSS
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <div style={{ marginLeft: '5rem' }}> {/* Añadido margen a la izquierda */}
+      <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/generate_tweet" element={<GenerateText />} />
@@ -19,18 +20,23 @@ function App() {
   );
 }
 
-// Componente funcional para la ruta inicial "/"
 function Home() {
   return (
-    <div>
-      <h1>Bienvenido a tu Aplicación</h1>
-      <p>Esta aplicación te permite interactuar con modelos de IA para generar texto y predecir la afiliación política de tweets.</p>
-      <p>Selecciona una opción en la barra de navegación para empezar:</p>
-      <ul>
-        <li><strong><a href="/generate_tweet">Generar Texto</a></strong>: Introduce un partido político y una palabra para generar un texto.</li>
-        <li><strong><a href="/predict">Predecir Partido</a></strong>: Introduce un tweet y un partido político para predecir si pertenece a ese partido.</li>
+    <div className="home">
+      <h1 className="home-title">Bienvenido a la Aplicación del TFG</h1>
+      <p className="home-text">
+        Este proyecto es parte de mi Trabajo de Fin de Grado, en el cual he desarrollado una aplicación utilizando Redes Generativas Antagónicas (GANs). La aplicación permite generar texto y predecir cuan real un tweet es para un partido.
+      </p>
+      <p className="home-text">
+        Utiliza la barra de navegación para explorar las siguientes funcionalidades:
+      </p>
+      <ul className="home-list">
+        <li><strong><a href="/generate_tweet">Generar Texto</a></strong>: Genera texto relacionado con un partido político a partir de una palabra clave utilizando un generador entrenado con GANs.</li>
+        <li><strong><a href="/predict">Predecir Partido</a></strong>: Introduce un tweet y un partido político para predecir si el tweet podría pertenecer a dicho partido, utilizando un discriminador entrenado.</li>
       </ul>
-      <p>Para más detalles, visita el <a href="https://github.com/JoseLu201/TextGAN-PyTorch/tree/main" target="_blank" rel="noopener noreferrer">repositorio en GitHub</a>.</p>
+      <p className="home-text">
+        Para más información sobre el desarrollo de este proyecto, puedes consultar el <a href="https://github.com/JoseLu201/TextGAN-PyTorch/tree/main" target="_blank" rel="noopener noreferrer">repositorio en GitHub</a>.
+      </p>
     </div>
   );
 }

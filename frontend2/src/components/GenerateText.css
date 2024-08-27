@@ -1,12 +1,102 @@
 /* Estilos para el selector de partido y la imagen */
-.partido-select {
+/* .partido-select {
     display: flex;
     align-items: center;
   }
   
   .partido-image {
-    width: 50px; /* Ajusta el tamaño según sea necesario */
-    height: auto; /* Ajusta el tamaño según sea necesario */
+    width: 50px;
+    height: auto; 
     margin-left: 10px;
+  } */
+  
+  .container {
+    margin-left: 4rem; /* Para mantener la consistencia con el estilo global */
+    padding: 2rem;
+    /* background-color: #ffffff; */
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+  h1 {
+    font-size: 2rem;
+    /* color: #333; */
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .form-select,
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .input-word {
+    max-width: 300px; /* Campo más corto */
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .result {
+    /* background-color: #f8f9fa; */
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+  }
+  
+  .alert {
+    font-size: 1rem;
+    color: #721c24;
+    /* background-color: #f8d7da; */
+    padding: 0.75rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  .partido-select {
+    display: flex;
+    flex-direction: column; /* Apilar verticalmente */
+    gap: 1rem; /* Espacio entre los selects */
+  }
+  
+  .partido-select select {
+    width: 100%;
+  }
+  
+  .partido-image {
+    max-width: 80px;
+    height: auto;
+    margin-top: 0.5rem;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .input-word {
+      max-width: 100%;
+    }
   }
   

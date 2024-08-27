@@ -1,0 +1,91 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #141E30, #243B55);
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+  margin-left: 4rem;
+  padding: 2rem;
+}
+
+/* Estilo para la sección Home */
+.home {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin: 2rem auto;
+  color: #333;
+  background: linear-gradient(135deg, #c4d7f5 0%, #fdfdfd 100%);
+}
+
+.home-title {
+  color: #243B55;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.home-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home-list li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.home-list a {
+  color: #243B55;
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.3s ease;
+}
+
+.home-list a:hover {
+  color: #ff512f;
+}
+
+/* Estilo para enlaces externos */
+a {
+  color: #243B55;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar Styling (if needed) */
+.navbar {
+  background: #141E30;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+  color: #f5f5f5;
+  text-decoration: none;    
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ff512f;
+}

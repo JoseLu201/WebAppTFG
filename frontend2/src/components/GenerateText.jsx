@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios, { all } from 'axios';
+import axios from 'axios';
 import { getPartidoImage } from '../utils.js';
 import './GenerateText.css';
 
@@ -69,11 +69,6 @@ function GenerateText() {
     setSelectGenModel(selectedGenModelName);
   }
 
-
-
-
-
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -82,7 +77,7 @@ function GenerateText() {
         gen_model: selectGenModel,
         word: word
       });
-  
+
       setGeneratedText(response.data.generated_text);
       setError(''); // Limpia el error si la solicitud es exitosa
     } catch (error) {
@@ -125,7 +120,7 @@ function GenerateText() {
               ))}
             </select>
 
-            
+
 
             <select id="gen_models" className="form-select" value={selectGenModel} onChange={handleGenModelChange} required>
               <option value="">Selecciona un modelo generador...</option>
